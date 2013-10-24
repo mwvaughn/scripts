@@ -1,0 +1,24 @@
+q.xml 
+
+you can import (copy and paste) this directly to modmine 
+
+http://intermine.modencode.org/release-32/importQueries.do?query_builder=yes
+
+(edit in case and) run the query
+
+from the result table you can see/download the code for the webservice ('code' drop down above the pagination)
+
+this is done already for you in the other files
+
+code.py
+code.pl
+code.rb
+code.java
+code.js
+
+Note: for the service request to be release indipendent, use query instead of release-32 (it will use the latest release)
+
+e.g.
+service = Service.new("http://intermine.modencode.org/release-32")
+becomes
+service = Service.new("http://intermine.modencode.org/query")

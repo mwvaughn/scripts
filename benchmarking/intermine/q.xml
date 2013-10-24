@@ -1,0 +1,15 @@
+<query name="" model="genomic" view="Submission.DCCid Submission.title 
+Submission.experimentType 
+Submission.publicReleaseDate 
+Submission.properties.name 
+Submission.properties.type
+Submission.properties.wikiLink 
+Submission.experiment.name 
+Submission.experiment.category 
+Submission.project.surnamePI 
+Submission.lab.surname 
+Submission.lab.affiliation" 
+longDescription="" sortOrder="Submission.DCCid asc">
+  <join path="Submission.properties" style="OUTER"/>
+  <constraint path="Submission.organism.shortName" op="=" value="D. melanogaster"/>
+</query>
